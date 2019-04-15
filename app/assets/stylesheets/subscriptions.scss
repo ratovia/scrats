@@ -1,0 +1,64 @@
+// Place all the styles related to the Subscriptions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  background-color: #f5f8fa;
+}
+
+header{
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background-color: rgb(169, 223, 87);
+
+}
+
+.left-header{
+  float: left;
+}
+
+.right-header{
+  float: right;
+}
+
+.menu{
+  padding-right: 10px;
+  text-decoration: none;
+}
+.logo{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.main_wrapper{
+  margin-top: 30px;
+}
+
+.subscription_items{
+  list-style: none;
+}
+
+.subscription_item{
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+
+}
+
+.new-subscription textarea{
+  margin: 30px auto 30px auto;
+  display: block;
+  width: 500px;
+  height: 200px;
+  font-size: 24px;
+  padding: 10px;
+  border: 1px solid rgb(216, 218, 223);
+}
+
+.item-menu{
+  float: right;
+  padding-left: 10px;
+}

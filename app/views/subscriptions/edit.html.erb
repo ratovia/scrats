@@ -1,0 +1,14 @@
+<%= render :partial => "header" %>
+<div class="main_wrapper">
+  <div class="container new-subscription">
+    <h1>Update Subscription</h1>
+    <%= form_tag("/subscriptions/#{@subscription.id}/update") do%>
+      <textarea name="name"><%= @subscription.name %></textarea>
+      <input class="button" type="submit" value="変更">
+    <% end %>
+  </div>
+</div>
+<footer>
+  <div class="container">
+  </div>
+</footer>

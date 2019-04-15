@@ -1,0 +1,17 @@
+<%= render :partial => "header" %>
+<div class="main_wrapper">
+  <div class="container">
+    <h1><%= @subscription.name %></h1>
+    <ul class="subscription_items">
+      <li class="subscription_item">
+        <%= @subscription.name %>
+        <%= link_to "削除","/subscriptions/#{@subscription.id}/destroy",class: "item-menu" %>
+        <%= link_to "変更","/subscriptions/#{@subscription.id}/edit",class: "item-menu" %>
+      </li>
+    </ul>
+  </div>
+</div>
+<footer>
+  <div class="container">
+  </div>
+</footer>
