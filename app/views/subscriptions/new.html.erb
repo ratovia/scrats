@@ -1,11 +1,31 @@
 <%= render :partial => "header" %>
 <div class="main_wrapper">
-  <div class="container new-subscription">
-    <h1>New Subscription</h1>
-    <%= form_tag("/subscriptions/create") do%>
-      <textarea name="name"></textarea>
-      <input class="button" type="submit" value="登録">
-    <% end %>
+  <div class="container">
+    <div class="new-subscription">
+      <h1>New Subscription</h1>
+      <%= form_tag("/subscriptions/create") do%>
+        <%= label_tag 'name','名称' %>
+        <input class="text-box" type="text" name="name" id="">
+        <h3>お支払い</h3>
+        <div class="cost_form">
+          <div class="form_group" id="form_No_1">
+            <%= label_tag 'price_No_1','費用' %>
+            <input class="text-box" type="text" name="price_No_1" id="">
+            <br>
+            <%= label_tag 'period_No_1','支払い単位' %>
+            <input class="text-box" type="text" name="period_No_1" id="">
+            <br>
+            <%= label_tag 'start_date_No_1','初回支払い日' %>
+            <input class="text-box" type="text" name="start_date_No_1" id="">
+            <br>
+            <%= label_tag 'end_date_No_1','支払い終了日' %>
+            <input class="text-box" type="text" name="end_date_No_1" id="">
+          </div>
+          <input class="button" id="add_cost" type="button" value="支払い追加">
+        </div>
+        <input class="button" type="submit" value="登録">
+      <% end %>
+    </div>
   </div>
 </div>
 <footer>
